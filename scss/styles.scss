@@ -204,16 +204,6 @@
   .presentation-text {
     margin-left: 16px;
   }
-
-  a {
-    color: var(--black);
-    text-underline-offset: 2px;
-    text-decoration-thickness: 1px;
-    transition: opacity 0.15s;
-    &:hover {
-      opacity: 0.8;
-    }
-  }
 }
 
 .experiences-container {
@@ -292,7 +282,7 @@
 }
 
 .detail-text {
-  max-width: 50%;
+  max-width: 550px;
   margin-bottom: 16px;
 }
 
@@ -461,6 +451,7 @@ footer {
   background: var(--black);
   color: var(--white);
   padding-bottom: 16px;
+  padding-inline: 32px;
 }
 
 .footer-upper-content {
@@ -469,7 +460,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-inline: 32px;
 }
 
 .copy {

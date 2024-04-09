@@ -23,3 +23,13 @@
 .mb-48 {
   margin-bottom: 48px;
 }
+
+.black-link {
+  color: var(--black);
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: opacity 0.15s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
