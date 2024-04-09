@@ -1,0 +1,25 @@
+.btn {
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.centered-section {
+  &-1100 {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  &-1400 {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .centered-section {
+    max-width: 90%;
+  }
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}

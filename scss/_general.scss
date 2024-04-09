@@ -1,0 +1,61 @@
+@use "variables" as *;
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-main);
+  background: var(--white);
+  color: var(--black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-title);
+}
+
+h2 {
+  font-size: clamp(24px, 5.5vw, 80px);
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: var(--fz-32);
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 630px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+p,
+li {
+  line-height: 1.4;
+}

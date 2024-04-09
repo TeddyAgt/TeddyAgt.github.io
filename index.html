@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c685d2b770.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./ressources/images/favicon-32-orange.png"
+    />
+    <title>Teddy Aboim | Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="top-bar" role="banner">
+      <a href="./index.html" aria-label="Retour à l'accueil" class="logo-link">
+        <img
+          src="./ressources/images/logo_v1_bold_222.svg"
+          alt=""
+          aria-hidden="true"
+          class="logo"
+        />
+      </a>
+      <button
+        class="toggle-menu-btn"
+        id="toggle-menu-btn"
+        aria-label="Ouvrir le menu de navigation"
+      >
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav
+        class="navigation"
+        role="navigation"
+        aria-label="Navigation principale"
+      >
+        <a href="#about" class="nav-link">Présentation</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a
+          href="./ressources/files/cv_teddy_aboim.pdf"
+          class="nav-link btn btn--cv"
+          target="_blank"
+          >CV</a
+        >
+      </nav>
+    </header>
+
+    <!-- hero -->
+    <section class="hero-section centered-section-1400" role="region">
+      <div class="hero-section__container hero-section__container--left">
+        <h1 class="main-title">teddy<br />aboim</h1>
+        <p class="hero-pitch">Bonjour,</p>
+        <p class="hero-pitch">
+          Actuellement en formation pour obtenir le titre professionnel de
+          développeur Web, je recherche un stage de 10 semaines (début septembre
+          2024) afin de valider ma formation.
+        </p>
+      </div>
+      <div class="hero-section__container hero-section__container--right">
+        <div class="img-placeholder">
+          <div class="hero-networks-container">
+            <a
+              class="network-link"
+              target="_blank"
+              href="https://www.linkedin.com/in/teddy-aboim-83332a16a/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              class="network-link"
+              target="_blank"
+              href="https://github.com/TeddyAgt"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section
+      id="about"
+      class="about-section centered-section-1100"
+      role="region"
+    >
+      <h2>présentation</h2>
+      <article class="presentation-article">
+        <p class="presentation--text">
+          Après 10 ans de carrière en logistique (dont plus de 5 ans en tant que
+          Key User), j'ai décidé de me reconvertir pour ne plus seulement faire
+          un métier pour lequel je suis doué, mais aussi et surtout un métier
+          qui me plait vraiment.
+        </p>
+        <p class="presentation--text">
+          Mon expérience en logistique m'a apporté la rigueur, l'esprit d'équipe
+          ainsi que le sens de l'organisation.<br />
+          Ma curiosité innée m'a permis d'apprendre très vite et donc d'évoluer
+          année après année toujours avec la pleine confiance de mes supérieurs.
+        </p>
+        <p class="presentation--text">
+          Ces qualités m'aideront à m'intégrer facilement à votre équipe et à
+          contribuer au mieux à vos projets.
+        </p>
+      </article>
+
+      <article class="experience-article">
+        <h3>Expérience Professionnelle</h3>
+        <ul class="experiences-container">
+          <li class="experience">
+            <div class="details-toggler">
+              <span class="details-toggler__text">
+                <span class="experience-title"
+                  >Technicien Pilotage logistique</span
+                >
+                <span class="experience-company">OCP Répartition</span>
+                <span class="experience-dates">Avril 2019 à juin 2023</span>
+              </span>
+              <img
+                class="details-toggler__chevron details-toggler__chevron--up"
+                src="./ressources/icons/chevron-down.svg"
+                alt=""
+              />
+            </div>
+            <ul class="experience__details-container expanded">
+              <p class="detail-text">
+                Mon quotidien: trouver une solution à chaque problème et
+                contribuer par tous les moyens à ma disposition à améliorer
+                l'expérience, l'ergonomie et la facilité de travail de tous.
+                <br />
+                Les seules limites que je me suis fixées pour répondre à ces
+                missions sont les limites de mon imagination.
+              </p>
+              <li class="detail">Ordonnancement & Supérvision de l'activité</li>
+              <li class="detail">Ateliers d’amélioration continue</li>
+              <li class="detail">
+                Key User, initialisation et recette des évolutions & incidents
+                du WMS et de l’ERP
+              </li>
+              <li class="detail">Création de requêtes dans l’ERP</li>
+              <li class="detail">Optimisation de l’implant magasin</li>
+              <li class="detail">Support niveau 2</li>
+            </ul>
+          </li>
+
+          <li class="experience">
+            <div class="details-toggler">
+              <span class="details-toggler__text">
+                <span class="experience-title">
+                  Key User recette métier (projet de fusion de plateformes)
+                </span>
+                <span class="experience-company">OCP Répartition</span>
+                <span class="experience-dates">Octobre 2018 à avril 2019</span>
+              </span>
+              <img
+                class="details-toggler__chevron"
+                src="./ressources/icons/chevron-down.svg"
+                alt=""
+              />
+            </div>
+            <ul class="experience__details-container">
+              <p class="detail-text">
+                Durant un projet confidentiel de plusieurs mois, j'ai travaillé
+                en collaboration avec tous les acteurs du projet pour mettre en
+                place et modifier plus d'une dizaine de flux logistiques et
+                informatiques.
+              </p>
+              <li class="detail">
+                Validation des blueprints & analyse des gaps
+              </li>
+              <li class="detail">
+                Construction de la campagne de test (HP ALM)
+              </li>
+              <li class="detail">
+                Préparation des environnements (paramétrage, jeux de données,
+                etc.)
+              </li>
+              <li class="detail">Exécution de la recette et des UAT</li>
+              <li class="detail">
+                Remontée et suivi des anomalies (JIRA) & reporting journalier
+              </li>
+            </ul>
+          </li>
+
+          <li class="experience">
+            <div class="details-toggler">
+              <span class="details-toggler__text">
+                <span class="experience-title">Key User flux entrant</span>
+                <span class="experience-company">OCP Répartition</span>
+                <span class="experience-dates">Janvier 2018 à avril 2019</span>
+              </span>
+              <img
+                class="details-toggler__chevron"
+                src="./ressources/icons/chevron-down.svg"
+                alt=""
+              />
+            </div>
+            <ul class="experience__details-container">
+              <p class="detail-text">
+                Sur une plateforme logistique nationale en pleine installation,
+                en plus des missions de réception classiques (en desktop ou
+                mobile), j'avais pour charge de prendre en compte et synthétiser
+                toutes les demandes, idées, contraintes de mon équipe et de
+                travailler en transverse avec d'autres services pour transformer
+                ces idées en améliorations concrètes sur le terrain.<br />
+                J'étais également en charge du premier niveau de débogage des
+                opérateurs ainsi que de la formation aux nouveaux process.
+              </p>
+              <li class="detail">
+                Référent process mobilité/desktop/interface miniload
+              </li>
+              <li class="detail">Support premier niveau</li>
+              <li class="detail">
+                Ateliers d'optimisation des process logistiques/informatiques
+              </li>
+              <li class="detail">Back-up Administration du stock central</li>
+            </ul>
+          </li>
+        </ul>
+        <p class="presentation-text see-resumee">
+          Voir mon
+          <a href="./ressources/files/cv_teddy_aboim.pdf" target="_blank">CV</a>
+          complet.
+        </p>
+      </article>
+
+      <article class="skills-article">
+        <h3>Compétences</h3>
+
+        <ul class="skills-container">
+          <li class="skills-category-container">
+            <h4 class="skills-category-title">
+              <img
+                class="skills-icon"
+                src="./ressources/icons/langages_icon.png"
+                alt=""
+                aria-hidden="true"
+              />Langages
+            </h4>
+            <ul class="skills-list">
+              <li class="skill">HTML 5</li>
+              <li class="skill">CSS 3 / SCSS</li>
+              <li class="skill">JavaScript ES6</li>
+              <li class="skill">PHP 8</li>
+              <li class="skill">Python</li>
+              <li class="skill">SQL</li>
+            </ul>
+          </li>
+
+          <li class="skills-category-container">
+            <h4 class="skills-category-title">
+              <img
+                class="skills-icon"
+                src="./ressources/icons/tools_icon.png"
+                alt=""
+                aria-hidden="true"
+              />Outils
+            </h4>
+            <ul class="skills-list">
+              <li class="skill">Git / GitHub</li>
+              <li class="skill">Bash</li>
+              <li class="skill">MySQL Workbench</li>
+              <li class="skill">Figma</li>
+            </ul>
+          </li>
+
+          <li class="skills-category-container">
+            <h4 class="skills-category-title">
+              <img
+                class="skills-icon"
+                src="./ressources/icons/other_icon.png"
+                alt=""
+                aria-hidden="true"
+              />Autre
+            </h4>
+            <ul class="skills-list">
+              <li class="skill">Capacité d'analyse</li>
+              <li class="skill">
+                Mettre des chansons honteuses dans la tête des collègues de
+                l'open-space dès le lundi 08h
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="contact-section centered-section-1100">
+      <h2>contact</h2>
+      <article class="contact-article">
+        <p>
+          Vous pouvez me contacter par mail à teddy.aboim@gmail.com ou
+          directement envoyer un message via le formulaire de contact
+          ci-dessous:
+        </p>
+        <form
+          name="contact"
+          method="POST"
+          class="contact-form"
+          data-netlify="true"
+        >
+          <div class="input-group">
+            <label for="email">Votre email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="input-group">
+            <label for="message">Votre message</label>
+            <textarea name="message" id="message" required></textarea>
+          </div>
+          <button class="submit-btn" type="submit">
+            Envoyer
+            <img
+              class="send-icon"
+              src="./ressources/icons/send-icon-black.png"
+              alt=""
+              aria-hidden="true"
+            />
+          </button>
+        </form>
+      </article>
+    </section>
+
+    <!-- footer -->
+    <footer role="contentinfo">
+      <div class="footer-upper-content">
+        <p class="copy">teddy.aboim@gmail.com</p>
+        <div class="footer-networks-container">
+          <a
+            class="network-link"
+            target="_blank"
+            href="https://www.linkedin.com/in/teddy-aboim-83332a16a/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            class="network-link"
+            target="_blank"
+            href="https://github.com/TeddyAgt"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+      <div class="mentions-container">
+        <p class="mentions-text">Mentions:</p>
+        <p class="mentions-text">
+          Merci à
+          <a
+            class="footer-link"
+            href="https://www.flaticon.com/free-icons/skill"
+            title="skill icons"
+            >Freepik - Flaticon</a
+          >
+          et
+          <a
+            class="footer-link"
+            href="https://www.flaticon.com/free-icons/code"
+            title="code icons"
+            >Icongeek26 - Flaticon</a
+          >
+          pour les icônes
+        </p>
+      </div>
+    </footer>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
