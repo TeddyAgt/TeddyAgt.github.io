@@ -132,6 +132,13 @@
   aspect-ratio: 1 / 1;
   background: var(--orange-primary);
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section__illustration {
+  max-width: 75%;
 }
 
 .hero-networks-container {
@@ -181,6 +188,23 @@
 
   .img-placeholder {
     width: 50%;
+  }
+
+  .hero-networks-container {
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    background: var(--white);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .network-link {
+    font-size: 20px;
   }
 }
 
@@ -492,7 +516,6 @@ footer {
   }
   .copy {
     position: static;
-    transform: translate(0);
     font-size: var(--fz-14);
   }
 }
