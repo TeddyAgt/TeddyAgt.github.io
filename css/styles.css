@@ -15,6 +15,7 @@
   --orange-primary: #ff521b;
   --orange-light: #ff6131;
   --blue-primary: #1bc8ff;
+  --error: #e74c3c;
 }
 
 *,
@@ -84,6 +85,8 @@ li {
 .centered-section-1100 {
   max-width: 1100px;
   margin: 0 auto;
+  margin-bottom: 80px;
+  padding-inline: 16px;
 }
 .centered-section-1400 {
   max-width: 1400px;
@@ -138,8 +141,8 @@ i {
 }
 
 .top-bar {
-  width: 100%;
   position: absolute;
+  width: 100%;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -189,20 +192,20 @@ i {
     position: relative;
   }
   .navigation {
+    position: absolute;
+    top: 100%;
+    left: 0;
     z-index: -1;
     display: flex;
-    visibility: hidden;
     width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    position: absolute;
-    top: 100%;
-    left: 0;
     background: var(--white);
     border-bottom: 1px solid var(--black);
     padding: 16px;
     transition: transform 0.2s ease-out, visibility 0.2s ease-out;
+    visibility: hidden;
     transform: translateY(-200%);
   }
   .navigation .nav-link {
@@ -325,11 +328,6 @@ i {
     font-size: 20px;
   }
 }
-.about-section {
-  margin-bottom: 80px;
-  padding-inline: 16px;
-}
-
 .presentation-article {
   max-width: 600px;
   margin: 0 auto;
@@ -489,9 +487,41 @@ i {
     align-items: center;
   }
 }
-.contact-section {
-  margin-bottom: 80px;
-  padding-inline: 16px;
+.projects-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project-card {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+.img-container {
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.project-picture {
+  width: 100%;
+}
+
+.project-card__content {
+  padding: 20px;
+}
+.project-card__content h3 {
+  font-size: var(--fz-20);
+  text-align: center;
+}
+
+.project-card__separator {
+  height: 1px;
+  width: 80%;
+  background: var(--black-light);
+  margin: 0 auto 16px;
 }
 
 .contact-article {
@@ -533,15 +563,20 @@ i {
   font-size: 18px;
   font-weight: 600;
   margin: 24px auto;
+  color: #000;
+  text-decoration: none;
+  width: fit-content;
   cursor: pointer;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
-
 .submit-btn:hover {
   background: var(--orange-light);
 }
-
-.submit-btn:hover .send-icon {
+.submit-btn img {
+  width: 32px;
+  margin-left: 16px;
+}
+.submit-btn:hover img {
   animation: shake 0.3s;
 }
 
@@ -562,11 +597,6 @@ i {
     transform: translateX(3%);
   }
 }
-.send-icon {
-  width: 32px;
-  margin-left: 16px;
-}
-
 @media screen and (max-width: 600px) {
   .contact-article {
     max-width: none;
