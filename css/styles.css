@@ -3,7 +3,7 @@
   --ff-title: "Open Sans", sans-serif;
   --fz-14: 0.875rem;
   --fz-16: 1rem;
-  --fz-18: 1.1rem;
+  --fz-18: 1.125rem;
   --fz-24: 1.5rem;
   --fz-32: 2rem;
   --fz-72: 4.5rem;
@@ -78,6 +78,7 @@ li {
 .btn {
   padding: 8px 12px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .centered-section-1100 {
@@ -284,6 +285,7 @@ i {
 }
 .network-link:hover {
   opacity: 0.8;
+  animation: shake 0.3s ease;
 }
 
 @media screen and (max-width: 850px) {
@@ -498,18 +500,16 @@ i {
   font-size: var(--fz-18);
 }
 
-.input-group {
+.contact-form .input-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
 }
-
-label {
+.contact-form label {
   margin-bottom: 8px;
 }
-
-input,
-textarea {
+.contact-form input,
+.contact-form textarea {
   padding: 8px;
   font-family: var(--ff-main);
   font-size: var(--fz-18);
@@ -518,8 +518,7 @@ textarea {
   border: 1px solid #bbb;
   border-radius: 4px;
 }
-
-textarea {
+.contact-form textarea {
   min-height: 88px;
 }
 

@@ -158,6 +158,7 @@
   transition: opacity 0.15s;
   &:hover {
     opacity: 0.8;
+    animation: shake 0.3s ease;
   }
 }
 
@@ -392,29 +393,31 @@
   font-size: var(--fz-18);
 }
 
-.input-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
-}
+.contact-form {
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
 
-label {
-  margin-bottom: 8px;
-}
+  label {
+    margin-bottom: 8px;
+  }
 
-input,
-textarea {
-  padding: 8px;
-  font-family: var(--ff-main);
-  font-size: var(--fz-18);
-  border: none;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  border: 1px solid #bbb;
-  border-radius: 4px;
-}
+  input,
+  textarea {
+    padding: 8px;
+    font-family: var(--ff-main);
+    font-size: var(--fz-18);
+    border: none;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    border: 1px solid #bbb;
+    border-radius: 4px;
+  }
 
-textarea {
-  min-height: 88px;
+  textarea {
+    min-height: 88px;
+  }
 }
 
 .submit-btn {
