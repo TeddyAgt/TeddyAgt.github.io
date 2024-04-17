@@ -388,8 +388,12 @@
   width: 250px;
   border-radius: 10px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  // border: 1px solid red;
   background: #fff;
+  // cursor: pointer;
+
+  &:hover .project-picture {
+    // transform: scale(1.1);
+  }
 }
 
 .img-container {
@@ -400,6 +404,7 @@
 
 .project-picture {
   width: 100%;
+  // transition: transform 0.3s ease;
 }
 
 .project-card__content {
