@@ -546,6 +546,11 @@ i {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   border: 1px solid #bbb;
   border-radius: 4px;
+  outline: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid var(--orange-primary);
 }
 .contact-form textarea {
   min-height: 88px;
